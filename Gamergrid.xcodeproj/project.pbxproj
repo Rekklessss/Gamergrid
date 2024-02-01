@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		09BD01152B68CBB9000CE7C9 /* GamergridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD01142B68CBB9000CE7C9 /* GamergridApp.swift */; };
-		09BD01172B68CBB9000CE7C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD01162B68CBB9000CE7C9 /* ContentView.swift */; };
 		09BD01192B68CBBA000CE7C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BD01182B68CBBA000CE7C9 /* Assets.xcassets */; };
 		09BD011C2B68CBBA000CE7C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BD011B2B68CBBA000CE7C9 /* Preview Assets.xcassets */; };
 		0F2F53CF2B68D1D10093E0E7 /* ViewPortHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F53CE2B68D1D10093E0E7 /* ViewPortHelper.swift */; };
 		0F2F53D22B68D39A0093E0E7 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F53D12B68D39A0093E0E7 /* AppConstants.swift */; };
+		0FA0DE0D2B6B9AFA00E345E3 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE0C2B6B9AFA00E345E3 /* HomeScreenView.swift */; };
+		0FA0DE0F2B6C10FB00E345E3 /* QuickSetupScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE0E2B6C10FB00E345E3 /* QuickSetupScreenView.swift */; };
+		0FA0DE122B6C18CD00E345E3 /* RoundCorenersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE112B6C18CD00E345E3 /* RoundCorenersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09BD01112B68CBB9000CE7C9 /* Gamergrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamergrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BD01142B68CBB9000CE7C9 /* GamergridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamergridApp.swift; sourceTree = "<group>"; };
-		09BD01162B68CBB9000CE7C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		09BD01182B68CBBA000CE7C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09BD011B2B68CBBA000CE7C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0F2F53CE2B68D1D10093E0E7 /* ViewPortHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPortHelper.swift; sourceTree = "<group>"; };
 		0F2F53D12B68D39A0093E0E7 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		0FA0DE0C2B6B9AFA00E345E3 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		0FA0DE0E2B6C10FB00E345E3 /* QuickSetupScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSetupScreenView.swift; sourceTree = "<group>"; };
+		0FA0DE112B6C18CD00E345E3 /* RoundCorenersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCorenersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +59,12 @@
 		09BD01132B68CBB9000CE7C9 /* Gamergrid */ = {
 			isa = PBXGroup;
 			children = (
+				0FA0DE102B6C18B600E345E3 /* Eetensions */,
 				0F2F53D02B68D3850093E0E7 /* Constants */,
 				0F2F53CC2B68D15E0093E0E7 /* Helpers */,
 				09BD01142B68CBB9000CE7C9 /* GamergridApp.swift */,
-				09BD01162B68CBB9000CE7C9 /* ContentView.swift */,
+				0FA0DE0C2B6B9AFA00E345E3 /* HomeScreenView.swift */,
+				0FA0DE0E2B6C10FB00E345E3 /* QuickSetupScreenView.swift */,
 				09BD01182B68CBBA000CE7C9 /* Assets.xcassets */,
 				09BD011A2B68CBBA000CE7C9 /* Preview Content */,
 			);
@@ -95,6 +101,14 @@
 				0F2F53D12B68D39A0093E0E7 /* AppConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		0FA0DE102B6C18B600E345E3 /* Eetensions */ = {
+			isa = PBXGroup;
+			children = (
+				0FA0DE112B6C18CD00E345E3 /* RoundCorenersView.swift */,
+			);
+			path = Eetensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,8 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09BD01172B68CBB9000CE7C9 /* ContentView.swift in Sources */,
+				0FA0DE0F2B6C10FB00E345E3 /* QuickSetupScreenView.swift in Sources */,
 				0F2F53CF2B68D1D10093E0E7 /* ViewPortHelper.swift in Sources */,
+				0FA0DE122B6C18CD00E345E3 /* RoundCorenersView.swift in Sources */,
+				0FA0DE0D2B6B9AFA00E345E3 /* HomeScreenView.swift in Sources */,
 				09BD01152B68CBB9000CE7C9 /* GamergridApp.swift in Sources */,
 				0F2F53D22B68D39A0093E0E7 /* AppConstants.swift in Sources */,
 			);
@@ -301,9 +317,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Gamergrid/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -319,6 +337,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = in.edu.srmist.Gamergrid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,9 +349,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Gamergrid/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -348,6 +369,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = in.edu.srmist.Gamergrid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

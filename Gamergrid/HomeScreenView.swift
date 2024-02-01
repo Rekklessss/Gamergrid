@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  HomeScreenView.swift
 //  Gamergrid
 //
-//  Created by Divyanshu Pabia on 30/01/24.
+//  Created by user2 on 01/02/24.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeScreenView: View {
     var body: some View {
         VStack {
             Text("GamerGrid")
@@ -44,5 +44,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    HomeScreenView()
 }
