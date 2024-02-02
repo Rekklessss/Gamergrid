@@ -21,6 +21,10 @@
 		0FA0DE1A2B6C334100E345E3 /* FollowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE192B6C334100E345E3 /* FollowingView.swift */; };
 		0FA0DE1C2B6C338000E345E3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE1B2B6C338000E345E3 /* SettingsView.swift */; };
 		0FA0DE1E2B6CD8CF00E345E3 /* ColorContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE1D2B6CD8CF00E345E3 /* ColorContants.swift */; };
+		0FA0DE202B6D050300E345E3 /* TeamSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE1F2B6D050300E345E3 /* TeamSelectView.swift */; };
+		0FA0DE222B6D051500E345E3 /* LeagueSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE212B6D051500E345E3 /* LeagueSelectView.swift */; };
+		0FA0DE272B6D06E400E345E3 /* QuickSetupViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE262B6D06E400E345E3 /* QuickSetupViewModal.swift */; };
+		0FA0DE292B6D08DA00E345E3 /* GameSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE282B6D08DA00E345E3 /* GameSelectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		0FA0DE192B6C334100E345E3 /* FollowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingView.swift; sourceTree = "<group>"; };
 		0FA0DE1B2B6C338000E345E3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0FA0DE1D2B6CD8CF00E345E3 /* ColorContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorContants.swift; sourceTree = "<group>"; };
+		0FA0DE1F2B6D050300E345E3 /* TeamSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSelectView.swift; sourceTree = "<group>"; };
+		0FA0DE212B6D051500E345E3 /* LeagueSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSelectView.swift; sourceTree = "<group>"; };
+		0FA0DE262B6D06E400E345E3 /* QuickSetupViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSetupViewModal.swift; sourceTree = "<group>"; };
+		0FA0DE282B6D08DA00E345E3 /* GameSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 		09BD01132B68CBB9000CE7C9 /* Gamergrid */ = {
 			isa = PBXGroup;
 			children = (
+				0FA0DE232B6D06A500E345E3 /* ViewModals */,
 				0FA0DE102B6C18B600E345E3 /* Eetensions */,
 				0F2F53D02B68D3850093E0E7 /* Constants */,
 				0F2F53CC2B68D15E0093E0E7 /* Helpers */,
@@ -81,7 +90,10 @@
 				0FA0DE192B6C334100E345E3 /* FollowingView.swift */,
 				0FA0DE152B6C2BCE00E345E3 /* NewsView.swift */,
 				0FA0DE132B6C2B8F00E345E3 /* MatchesView.swift */,
+				0FA0DE282B6D08DA00E345E3 /* GameSelectView.swift */,
 				0FA0DE0E2B6C10FB00E345E3 /* QuickSetupScreenView.swift */,
+				0FA0DE1F2B6D050300E345E3 /* TeamSelectView.swift */,
+				0FA0DE212B6D051500E345E3 /* LeagueSelectView.swift */,
 				09BD01182B68CBBA000CE7C9 /* Assets.xcassets */,
 				09BD011A2B68CBBA000CE7C9 /* Preview Content */,
 			);
@@ -127,6 +139,14 @@
 				0FA0DE112B6C18CD00E345E3 /* RoundCorenersView.swift */,
 			);
 			path = Eetensions;
+			sourceTree = "<group>";
+		};
+		0FA0DE232B6D06A500E345E3 /* ViewModals */ = {
+			isa = PBXGroup;
+			children = (
+				0FA0DE262B6D06E400E345E3 /* QuickSetupViewModal.swift */,
+			);
+			path = ViewModals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,13 +222,17 @@
 				0FA0DE0F2B6C10FB00E345E3 /* QuickSetupScreenView.swift in Sources */,
 				0FA0DE162B6C2BCE00E345E3 /* NewsView.swift in Sources */,
 				0FA0DE1A2B6C334100E345E3 /* FollowingView.swift in Sources */,
+				0FA0DE222B6D051500E345E3 /* LeagueSelectView.swift in Sources */,
+				0FA0DE292B6D08DA00E345E3 /* GameSelectView.swift in Sources */,
 				0FA0DE142B6C2B8F00E345E3 /* MatchesView.swift in Sources */,
 				0F2F53CF2B68D1D10093E0E7 /* ViewPortHelper.swift in Sources */,
 				0FA0DE122B6C18CD00E345E3 /* RoundCorenersView.swift in Sources */,
+				0FA0DE202B6D050300E345E3 /* TeamSelectView.swift in Sources */,
 				0FA0DE0D2B6B9AFA00E345E3 /* HomeScreenView.swift in Sources */,
 				09BD01152B68CBB9000CE7C9 /* GamergridApp.swift in Sources */,
 				0F2F53D22B68D39A0093E0E7 /* AppConstants.swift in Sources */,
 				0FA0DE182B6C2BFF00E345E3 /* LeaguesView.swift in Sources */,
+				0FA0DE272B6D06E400E345E3 /* QuickSetupViewModal.swift in Sources */,
 				0FA0DE1C2B6C338000E345E3 /* SettingsView.swift in Sources */,
 				0FA0DE1E2B6CD8CF00E345E3 /* ColorContants.swift in Sources */,
 			);
