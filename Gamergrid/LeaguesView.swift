@@ -13,8 +13,20 @@ struct LeaguesView: View {
             Color.black
                 .ignoresSafeArea()
                     
-            Text("This is Leagues view")
+            VStack {
+                HStack {
+                    Text("Leagues")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Spacer()
+                }
+                .padding(.vertical, getRelativeHeight(20))
+                .padding(.horizontal, 10)
+                .background(ColorContants.TopTitleBar)
                 .foregroundColor(.white)
+                
+                Spacer()
+            }
         }
     }
 }

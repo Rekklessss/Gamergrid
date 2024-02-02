@@ -13,8 +13,23 @@ struct SettingsView: View {
             Color.black
                 .ignoresSafeArea()
                     
-            Text("This is Settings view")
+            VStack {
+                HStack {
+                    Text("More")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Spacer()
+                }
+                .padding(.vertical, getRelativeHeight(20))
+                .padding(.horizontal, 10)
+                .background(ColorContants.TopTitleBar)
                 .foregroundColor(.white)
+                
+                Text("We can keep your settings safe so you can sync them across device or retrieve them when you get a new device.")
+                    .foregroundColor(.white)
+                    .padding(20)
+                Spacer()
+            }
         }
     }
 }

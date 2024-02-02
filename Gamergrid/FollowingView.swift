@@ -13,8 +13,20 @@ struct FollowingView: View {
             Color.black
                 .ignoresSafeArea()
                     
-            Text("This is Following view")
+            VStack {
+                HStack {
+                    Text("Following")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Spacer()
+                }
+                .padding(.vertical, getRelativeHeight(20))
+                .padding(.horizontal, 10)
+                .background(ColorContants.TopTitleBar)
                 .foregroundColor(.white)
+                
+                Spacer()
+            }
         }
     }
 }

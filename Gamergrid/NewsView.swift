@@ -13,8 +13,20 @@ struct NewsView: View {
             Color.black
                 .ignoresSafeArea()
                     
-            Text("This is News view")
+            VStack {
+                HStack {
+                    Text("News")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Spacer()
+                }
+                .padding(.vertical, getRelativeHeight(20))
+                .padding(.horizontal, 10)
+                .background(ColorContants.TopTitleBar)
                 .foregroundColor(.white)
+                
+                Spacer()
+            }
         }
     }
 }
