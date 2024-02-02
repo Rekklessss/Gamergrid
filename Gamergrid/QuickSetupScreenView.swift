@@ -19,7 +19,7 @@ struct QuickSetupScreenView: View {
                     .aspectRatio(contentMode: .fill)
                     .edgesIgnoringSafeArea(.all)
                     .frame(minWidth: 0, maxWidth: .infinity)
-                    .brightness(-0.2)
+                    .brightness(-0.4)
                 VStack{
                     VStack {
                         Image("MainLogo")
@@ -32,7 +32,6 @@ struct QuickSetupScreenView: View {
                         Text("News  ·  Live Scores  ·  Stats")
                             .fontWeight(.bold)
                             .foregroundColor(.white)
-                            .minimumScaleFactor(0.5)
                             .multilineTextAlignment(.leading)
                             .frame(width: getRelativeWidth(268.0), height: getRelativeHeight(21.0),
                                    alignment: .center)
@@ -43,18 +42,24 @@ struct QuickSetupScreenView: View {
                     
                     Spacer()
                     
-                    Button(action: {}, label: {
+                    NavigationLink(destination: GameSelectView()){
                         Text("Quick Setup")
                             .font(.title2)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .fontWeight(.bold)
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
                             .frame(width: getRelativeWidth(325.0),height: getRelativeHeight(72.0), alignment: .center)
                             .background(RoundedCorners(topLeft: 16.0, topRight: 16.0,bottomLeft: 16.0, bottomRight: 16.0)
                                 .fill(.green))
+                    }
+                    
+                    Button(action: {}, label: {
+                        Text("Already a user? Sign in")
+                            .font(.subheadline)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(.white)
+                            .padding(.bottom, getRelativeHeight(80))
                     })
-                    .foregroundColor(.white)
-                    .padding(.bottom, getRelativeHeight(80))
                 }
             }
         }

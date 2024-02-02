@@ -45,6 +45,7 @@ struct HomeScreenView: View {
                 }
             .accentColor(.green)
         }
+        .navigationBarBackButtonHidden(true)
         
         
     }
