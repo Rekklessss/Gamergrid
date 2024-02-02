@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeScreenView: View {
     init() {
         UITabBar.appearance().unselectedItemTintColor = UIColor.white
+        UITabBar.appearance().barTintColor = UIColor.black
     }
     
     var body: some View {
