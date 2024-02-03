@@ -14,4 +14,5 @@ struct ColorContants {
     static let GreenGradient1: Color = .init("GreenGradient1")
     static let GreenGradient2: Color = .init("GreenGradient2")
     static let GreenGradient3: Color = .init("GreenGradient3")
+    static let SearchBarColor: Color = .init("SeachBarColor")
 }

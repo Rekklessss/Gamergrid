@@ -8,22 +8,52 @@
 import SwiftUI
 
 struct GameSelectView: View {
+    let names = ["Holly", "Josh", "Rhonda", "Ted"]
+    @State private var searchText = ""
+    
+    var searchResults: [String] {
+            if searchText.isEmpty {
+                return names
+            } else {
+                return names.filter { $0.contains(searchText) }
+            }
+    }
+    
     var body: some View {
             ZStack {
                 Color.black
                     .ignoresSafeArea()
                 
                 VStack {
-                    HStack {
-                        Text("Select Games")
-                            .font(.title)
-                            .fontWeight(.bold)
-                        Spacer()
+                    VStack {
+                        HStack {
+                            Text("Select Games")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                            Spacer()
+                        }
+                        .padding(.vertical, getRelativeHeight(20))
+                        .padding(.horizontal, 10)
+                        .foregroundColor(.white)
+                        
+                        HStack {
+                            Image(systemName:"magnifyingglass").foregroundColor(.white.opacity(0.5))
+                                TextField("",text:$searchText,prompt:Text("Search")
+                                    .foregroundColor(.white.opacity(0.5)))
+                                    .font(Font.system(size: 15))
+                                    .foregroundColor(.white)
+                        }
+                        .padding(7)
+                        .cornerRadius(50)
+                        .foregroundColor(.white)
+                        .background(RoundedCorners(topLeft: 15,topRight: 15, bottomLeft: 15,bottomRight: 15).fill(ColorContants.SearchBarColor))
+                        .padding(.horizontal)
+                        .padding(.bottom)
                     }
-                    .padding(.vertical, getRelativeHeight(20))
-                    .padding(.horizontal, 10)
                     .background(ColorContants.TopTitleBar)
-                    .foregroundColor(.white)
+                    
+                    
                     
                     Spacer()
                     
@@ -53,7 +83,7 @@ struct GameSelectView: View {
                                     .fontWeight(.bold)
                                     .foregroundColor(.white)
                                     .multilineTextAlignment(.center)
-                                    .background(RoundedCorners(topLeft: 16.0, topRight: 0,bottomLeft: 0, bottomRight: 0)
+                                    .background(RoundedCorners(topLeft: 15.0, topRight: 0,bottomLeft: 15, bottomRight: 0)
                                         .fill(.green))
                             }
                         }
@@ -63,10 +93,13 @@ struct GameSelectView: View {
                     .background(ColorContants.TopTitleBar)
                     .foregroundColor(.white)
                 }
-                .ignoresSafeArea(.all, edges: [.bottom])
+                .foregroundColor(.white)
             }
         
+        
+        
     }
+    
 }
 
 #Preview {
