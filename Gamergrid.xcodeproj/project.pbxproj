@@ -26,6 +26,7 @@
 		0FA0DE272B6D06E400E345E3 /* QuickSetupViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE262B6D06E400E345E3 /* QuickSetupViewModal.swift */; };
 		0FA0DE292B6D08DA00E345E3 /* GameSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE282B6D08DA00E345E3 /* GameSelectView.swift */; };
 		0FA0DE2E2B6EFF3300E345E3 /* CalendarComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE2D2B6EFF3300E345E3 /* CalendarComponentView.swift */; };
+		0FA0DE352B6F9EAD00E345E3 /* FollowingItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE342B6F9EAD00E345E3 /* FollowingItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		0FA0DE262B6D06E400E345E3 /* QuickSetupViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSetupViewModal.swift; sourceTree = "<group>"; };
 		0FA0DE282B6D08DA00E345E3 /* GameSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectView.swift; sourceTree = "<group>"; };
 		0FA0DE2D2B6EFF3300E345E3 /* CalendarComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarComponentView.swift; sourceTree = "<group>"; };
+		0FA0DE342B6F9EAD00E345E3 /* FollowingItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +94,8 @@
 				0FA0DE1B2B6C338000E345E3 /* SettingsView.swift */,
 				0FA0DE192B6C334100E345E3 /* FollowingView.swift */,
 				0FA0DE152B6C2BCE00E345E3 /* NewsView.swift */,
-				0FA0DE132B6C2B8F00E345E3 /* MatchesView.swift */,
 				0FA0DE282B6D08DA00E345E3 /* GameSelectView.swift */,
+				0FA0DE312B6F9AC500E345E3 /* models */,
 				0FA0DE0E2B6C10FB00E345E3 /* QuickSetupScreenView.swift */,
 				0FA0DE1F2B6D050300E345E3 /* TeamSelectView.swift */,
 				0FA0DE212B6D051500E345E3 /* LeagueSelectView.swift */,
@@ -156,8 +158,17 @@
 			isa = PBXGroup;
 			children = (
 				0FA0DE2D2B6EFF3300E345E3 /* CalendarComponentView.swift */,
+				0FA0DE132B6C2B8F00E345E3 /* MatchesView.swift */,
 			);
 			path = MatchesViews;
+			sourceTree = "<group>";
+		};
+		0FA0DE312B6F9AC500E345E3 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				0FA0DE342B6F9EAD00E345E3 /* FollowingItemModel.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +248,7 @@
 				0FA0DE292B6D08DA00E345E3 /* GameSelectView.swift in Sources */,
 				0FA0DE2E2B6EFF3300E345E3 /* CalendarComponentView.swift in Sources */,
 				0FA0DE142B6C2B8F00E345E3 /* MatchesView.swift in Sources */,
+				0FA0DE352B6F9EAD00E345E3 /* FollowingItemModel.swift in Sources */,
 				0F2F53CF2B68D1D10093E0E7 /* ViewPortHelper.swift in Sources */,
 				0FA0DE122B6C18CD00E345E3 /* RoundCorenersView.swift in Sources */,
 				0FA0DE202B6D050300E345E3 /* TeamSelectView.swift in Sources */,

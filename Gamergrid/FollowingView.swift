@@ -14,14 +14,36 @@ struct FollowingView: View {
                 .ignoresSafeArea()
                     
             VStack {
-                HStack {
-                    Text("Following")
-                        .font(.title)
-                        .fontWeight(.bold)
-                    Spacer()
+                VStack {
+                    HStack {
+                        Text("Following")
+                            .font(.title)
+                            .fontWeight(.bold)
+                        
+                        Spacer()
+                    }
+                    .padding(.vertical, getRelativeHeight(10))
+                    .padding(.horizontal, getRelativeWidth(10))
+                    
+                    HStack(spacing: 20) {
+                        Button(action: {}, label: {
+                            Text("Teams")
+                                .font(.subheadline)
+                                .fontWeight(.bold)
+                        })
+                        
+                        Button(action: {}, label: {
+                            Text("Players")
+                                .font(.subheadline)
+                                .fontWeight(.bold)
+                        })
+                        
+                        Spacer()
+                        
+                    }
+                    .padding(.horizontal)
+                    .padding(.vertical, getRelativeHeight(10))
                 }
-                .padding(.vertical, getRelativeHeight(20))
-                .padding(.horizontal, 10)
                 .background(ColorContants.TopTitleBar)
                 .foregroundColor(.white)
                 

@@ -8,19 +8,10 @@
 import SwiftUI
 
 struct GameSelectView: View {
-    let names = ["Holly", "Josh", "Rhonda", "Ted"]
-    @State private var searchText = ""
-    
-    var searchResults: [String] {
-            if searchText.isEmpty {
-                return names
-            } else {
-                return names.filter { $0.contains(searchText) }
-            }
-    }
-    
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
-    
+    @AppStorage("FollowingGames") var followingGames: FollowingItemsList = FollowingItemsList()
+    @State private var searchText = ""
+
     var body: some View {
             ZStack {
                 Color.black
@@ -106,10 +97,6 @@ struct GameSelectView: View {
                 })
             }
             .navigationBarBackButtonHidden(true)
-        
-        
-        
-        
     }
     
 }

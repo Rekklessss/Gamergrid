@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MatchesView: View {
     @State public var showCalendarSheet = false
+    @State public var isOngoing = false
+    @State public var isSearching = false
     
     var body: some View {
         ZStack {
@@ -27,8 +29,8 @@ struct MatchesView: View {
                     Spacer()
                     
                     HStack(alignment: .top, spacing: getRelativeWidth(15)) {
-                        Button(action: {}, label: {
-                            Image(systemName: "clock.badge")
+                        Button(action: {isOngoing.toggle()}, label: {
+                            Image(systemName: isOngoing ? "clock.fill" : "clock")
                                 .resizable()
                                 .frame(width: getRelativeWidth(25), height: getRelativeWidth(25))
                         })
@@ -57,41 +59,47 @@ struct MatchesView: View {
                 Spacer()
                 
                 ScrollView(.vertical) {
-                    
-                    // Latest News
-                    HStack {
-                        
-                        VStack(alignment: .leading, spacing: 30) {
-                            Text("CSGO World Championship 2023")
-                                .font(.headline)
-                                .multilineTextAlignment(.leading)
-                                
-                            Text("YesterDay, 06:30 PM")
-                                .font(.subheadline)
-                                .multilineTextAlignment(.leading)
-                        }
-                        .padding(30)
-                        .frame(width: getRelativeWidth(250))
-                        
-                        Spacer()
-                        
-                        AsyncImage(url: URL(string: "https://picsum.photos/id/12/600")) { image in
-                            image.resizable()
-                        } placeholder: {
-                            ProgressView()
-                        }
-                        .frame(width: getRelativeWidth(30), height: getRelativeHeight(30))
-                        .padding(.horizontal,20)
-                        
-                    }
-                    .foregroundColor(.white)
-                    .background(RoundedCorners(topLeft: 15,topRight: 15, bottomLeft: 15, bottomRight: 15).fill(LinearGradient(
-                        gradient: Gradient(colors: [ColorContants.GreenGradient1, ColorContants.GreenGradient2,ColorContants.GreenGradient3]),
-                        startPoint: .leading,
-                        endPoint: .trailing)))                    .padding(.vertical, getRelativeHeight(10))
 
+                    if (isOngoing) {
+                        Text("Following")
+                            .font(.headline)
+                            .fontWeight(.bold)
+                            .padding(.top)
+                    } else {
+                        // Latest News
+                        HStack {
+                            
+                            VStack(alignment: .leading, spacing: 25) {
+                                Text("CSGO World Championship 2023")
+                                    .font(.headline)
+                                    .multilineTextAlignment(.leading)
+                                    .fontWeight(.heavy)
+                                
+                                Text("YesterDay, 06:30 PM")
+                                    .font(.subheadline)
+                                    .multilineTextAlignment(.leading)
+                                    .fontWeight(.medium)
+                            }
+                            .padding(30)
+                            .frame(width: getRelativeWidth(250))
+                            
+                            Spacer()
+                            
+                            AsyncImage(url: URL(string: "https://picsum.photos/id/12/600")) { image in
+                                image.resizable()
+                            } placeholder: {
+                                ProgressView()
+                            }
+                            .frame(width: getRelativeWidth(30), height: getRelativeHeight(30))
+                            .padding(.horizontal,20)
+                            
+                        }
+                        .background(RoundedCorners(topLeft: 15,topRight: 15, bottomLeft: 15,bottomRight: 15).fill(
+                            LinearGradient(gradient: Gradient(colors: [ColorContants.GreenGradient1,ColorContants.GreenGradient2,ColorContants.GreenGradient3]),startPoint: .leading,endPoint: .trailing)))
+                        .padding(.vertical, getRelativeHeight(10))
+                    }
                     
-                    ForEach(1..<10) { i in
+                    ForEach(1..<4) { i in
                         //Loop tournaments
                         
                         VStack(spacing: 0) {
@@ -109,6 +117,7 @@ struct MatchesView: View {
                                     Text("Roobet Cup 2023")
                                         .foregroundColor(.white)
                                         .font(.subheadline)
+                                        .fontWeight(.bold)
                                 }
                                 
                                 Spacer()
@@ -116,10 +125,11 @@ struct MatchesView: View {
                                 Button(action: {}, label: {
                                     Image(systemName: "chevron.down")
                                         .resizable()
-                                        .frame(width: getRelativeWidth(25), height: getRelativeWidth(15))
+                                        .frame(width: getRelativeWidth(15), height: getRelativeWidth(10))
                                 })
                             }
-                            .padding(10)
+                            .padding(.vertical ,getRelativeHeight(10))
+                            .padding(.horizontal, getRelativeWidth(20))
                             .background(RoundedCorners(topLeft: 15, topRight: 15).fill(ColorContants.TournamentTitle))
                             
                             //Tournament Matches Info
@@ -135,7 +145,7 @@ struct MatchesView: View {
                                         
                                         Spacer()
                                         
-                                        //                              Team1 Image
+                                        //Team1 Image
                                         AsyncImage(url: URL(string: "https://picsum.photos/id/12/600")) { image in
                                             image.resizable()
                                         } placeholder: {
@@ -146,7 +156,7 @@ struct MatchesView: View {
                                         
                                         Spacer()
                                         
-                                        //                              Timings
+                                        //Timings
                                         VStack {
                                             Text("07:30")
                                             Text("PM")
@@ -156,7 +166,7 @@ struct MatchesView: View {
                                         
                                         Spacer()
                                         
-                                        //                              Team 2 Image
+                                        //Team 2 Image
                                         AsyncImage(url: URL(string: "https://picsum.photos/id/12/600")) { image in
                                             image.resizable()
                                         } placeholder: {
@@ -167,7 +177,7 @@ struct MatchesView: View {
                                         
                                         Spacer()
                                         
-                                        //                              Team 2
+                                        //Team 2
                                         Text("Astralis")
                                             .font(.subheadline)
                                         
@@ -177,15 +187,16 @@ struct MatchesView: View {
                                 }
                                 
                             }
-                            .foregroundColor(.white)
                             .padding(10)
                             .background(RoundedCorners(bottomLeft: 15, bottomRight: 15).fill(ColorContants.TournamentMatches))
                         }
+                        .fontWeight(.semibold)
                         .padding(.vertical, 10)
                     }
-                    
+                                        
                     
                 }
+                .foregroundColor(.white)
                 .padding(.horizontal, getRelativeWidth(10))
             }
             

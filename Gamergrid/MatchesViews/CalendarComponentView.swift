@@ -30,6 +30,8 @@ struct CalendarComponentView: View {
                 .padding(.horizontal)
                 .padding(.vertical,getRelativeHeight(20))
                 
+                Text("Calendar")
+                
                 Spacer()
             }
             
