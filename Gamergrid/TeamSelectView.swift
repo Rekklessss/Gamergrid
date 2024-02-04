@@ -18,6 +18,7 @@ struct TeamSelectView: View {
                 return names.filter { $0.contains(searchText) }
             }
     }
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     
     var body: some View {
             ZStack {
@@ -91,7 +92,18 @@ struct TeamSelectView: View {
                     .background(ColorContants.TopTitleBar)
                     .foregroundColor(.white)
                 }
+                .toolbar(content: {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button(action: {
+                            presentationMode.wrappedValue.dismiss()
+                        }, label: {
+                            Image(systemName: "chevron.left")
+                                .accentColor(.white)
+                        })
+                    }
+                })
             }
+            .navigationBarBackButtonHidden(true)
         
     }
 }

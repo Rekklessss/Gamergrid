@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MatchesView: View {
+    @State public var showCalendarSheet = false
+    
     var body: some View {
         ZStack {
             Color.black
@@ -37,11 +39,15 @@ struct MatchesView: View {
                                 .frame(width: getRelativeWidth(25), height: getRelativeWidth(25))
                         })
                         
-                        Button(action: {}, label: {
+                        Button(action: {showCalendarSheet.toggle()}, label: {
                             Image(systemName: "calendar")
                                 .resizable()
-                                .frame(width: getRelativeWidth(25), height: getRelativeWidth(25))
+                                .frame(width: getRelativeWidth(25), height: 
+                                        getRelativeWidth(25))
                         })
+                        .sheet(isPresented: $showCalendarSheet) {
+                            CalendarComponentView(showCalendarSheet: $showCalendarSheet)
+                        }
                     }
                 }
                 .padding(.vertical, getRelativeHeight(20))

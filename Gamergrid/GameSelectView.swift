@@ -19,6 +19,8 @@ struct GameSelectView: View {
             }
     }
     
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
             ZStack {
                 Color.black
@@ -52,8 +54,6 @@ struct GameSelectView: View {
                         .padding(.bottom)
                     }
                     .background(ColorContants.TopTitleBar)
-                    
-                    
                     
                     Spacer()
                     
@@ -94,7 +94,19 @@ struct GameSelectView: View {
                     .foregroundColor(.white)
                 }
                 .foregroundColor(.white)
+                .toolbar(content: {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button(action: {
+                            presentationMode.wrappedValue.dismiss()
+                        }, label: {
+                            Image(systemName: "chevron.left")
+                                .accentColor(.white)
+                        })
+                    }
+                })
             }
+            .navigationBarBackButtonHidden(true)
+        
         
         
         
