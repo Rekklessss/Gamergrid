@@ -29,28 +29,24 @@ struct NewsView: View {
                     HStack {
                         Button(action: {}, label: {
                             Text("For You")
-                                .font(.subheadline)
-                                .fontWeight(.bold)
                         })
                         
                         Spacer()
                         
                         Button(action: {}, label: {
                             Text("Latest")
-                                .font(.subheadline)
-                                .fontWeight(.bold)
                         })
                         
                         Spacer()
                         
                         Button(action: {}, label: {
                             Text("Tournaments")
-                                .font(.subheadline)
-                                .fontWeight(.bold)
                         })
                     }
+                    
+                    .fontWeight(.medium)
                     .padding(.horizontal)
-                    .padding(.vertical, getRelativeHeight(10))
+                    .padding(.vertical, getRelativeHeight(20))
                 }
                 .background(ColorContants.TopTitleBar)
                 .foregroundColor(.white)

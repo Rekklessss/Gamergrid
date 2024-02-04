@@ -27,6 +27,7 @@
 		0FA0DE292B6D08DA00E345E3 /* GameSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE282B6D08DA00E345E3 /* GameSelectView.swift */; };
 		0FA0DE2E2B6EFF3300E345E3 /* CalendarComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE2D2B6EFF3300E345E3 /* CalendarComponentView.swift */; };
 		0FA0DE352B6F9EAD00E345E3 /* FollowingItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE342B6F9EAD00E345E3 /* FollowingItemModel.swift */; };
+		0FA0DE392B7028EE00E345E3 /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE382B7028EE00E345E3 /* MatchDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		0FA0DE282B6D08DA00E345E3 /* GameSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectView.swift; sourceTree = "<group>"; };
 		0FA0DE2D2B6EFF3300E345E3 /* CalendarComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarComponentView.swift; sourceTree = "<group>"; };
 		0FA0DE342B6F9EAD00E345E3 /* FollowingItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingItemModel.swift; sourceTree = "<group>"; };
+		0FA0DE382B7028EE00E345E3 /* MatchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			children = (
 				0FA0DE2D2B6EFF3300E345E3 /* CalendarComponentView.swift */,
 				0FA0DE132B6C2B8F00E345E3 /* MatchesView.swift */,
+				0FA0DE382B7028EE00E345E3 /* MatchDetailView.swift */,
 			);
 			path = MatchesViews;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				0FA0DE292B6D08DA00E345E3 /* GameSelectView.swift in Sources */,
 				0FA0DE2E2B6EFF3300E345E3 /* CalendarComponentView.swift in Sources */,
 				0FA0DE142B6C2B8F00E345E3 /* MatchesView.swift in Sources */,
+				0FA0DE392B7028EE00E345E3 /* MatchDetailView.swift in Sources */,
 				0FA0DE352B6F9EAD00E345E3 /* FollowingItemModel.swift in Sources */,
 				0F2F53CF2B68D1D10093E0E7 /* ViewPortHelper.swift in Sources */,
 				0FA0DE122B6C18CD00E345E3 /* RoundCorenersView.swift in Sources */,

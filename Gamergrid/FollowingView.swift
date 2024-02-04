@@ -28,21 +28,18 @@ struct FollowingView: View {
                     HStack(spacing: 20) {
                         Button(action: {}, label: {
                             Text("Teams")
-                                .font(.subheadline)
-                                .fontWeight(.bold)
                         })
                         
                         Button(action: {}, label: {
                             Text("Players")
-                                .font(.subheadline)
-                                .fontWeight(.bold)
                         })
                         
                         Spacer()
                         
                     }
+                    .fontWeight(.medium)
                     .padding(.horizontal)
-                    .padding(.vertical, getRelativeHeight(10))
+                    .padding(.vertical, getRelativeHeight(20))
                 }
                 .background(ColorContants.TopTitleBar)
                 .foregroundColor(.white)
