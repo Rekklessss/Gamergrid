@@ -33,10 +33,7 @@ struct MatchDetailView: View {
                             //Team 1
                             Text("Furia")
                                 .font(.subheadline)
-                            
-                            
                         }
-                        
                         
                         Spacer()
                         
@@ -48,7 +45,6 @@ struct MatchDetailView: View {
                             
                             Text("Today")
                         }
-                        
                         
                         Spacer()
                         
@@ -66,8 +62,6 @@ struct MatchDetailView: View {
                             //Team 1
                             Text("Astralis")
                                 .font(.subheadline)
-                            
-                            
                         }
                         
                         Spacer()

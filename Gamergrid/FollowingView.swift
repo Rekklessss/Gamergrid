@@ -31,7 +31,7 @@ struct FollowingView: View {
                         })
                         
                         Button(action: {}, label: {
-                            Text("Players")
+                            Text("Games")
                         })
                         
                         Spacer()

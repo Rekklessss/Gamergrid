@@ -11,6 +11,8 @@ struct MatchesView: View {
     @State public var showCalendarSheet = false
     @State public var isOngoing = false
     @State public var isSearching = false
+    @State private var isExpanded: [Bool] = Array(repeating: true, count: 4)
+
     
     var body: some View {
         NavigationView {
@@ -101,7 +103,6 @@ struct MatchesView: View {
                         }
                         
                         ForEach(1..<4) { i in
-                            //Loop tournaments
                             
                             VStack(spacing: 0) {
                                 //Tournament Title and info
@@ -123,8 +124,8 @@ struct MatchesView: View {
                                     
                                     Spacer()
                                     
-                                    Button(action: {}, label: {
-                                        Image(systemName: "chevron.down")
+                                    Button(action: {self.isExpanded[i].toggle()}, label: {
+                                        Image(systemName: self.isExpanded[i] ? "chevron.down" : "chevron.up")
                                             .resizable()
                                             .frame(width: getRelativeWidth(15), height: getRelativeWidth(10))
                                     })
@@ -133,65 +134,68 @@ struct MatchesView: View {
                                 .padding(.horizontal, getRelativeWidth(20))
                                 .background(RoundedCorners(topLeft: 15, topRight: 15).fill(ColorContants.TournamentTitle))
                                 
-                                //Tournament Matches Info
-                                VStack(){
-                                    //Loop Matches
-                                    ForEach(1..<3) { j in
-                                        NavigationLink(destination: MatchDetailView()) {
-                                            HStack {
-                                                Spacer()
-                                                
-                                                //Team 1
-                                                Text("Furia")
-                                                    .font(.subheadline)
-                                                
-                                                Spacer()
-                                                
-                                                //Team1 Image
-                                                AsyncImage(url: URL(string: "https://picsum.photos/id/12/600")) { image in
-                                                    image.resizable()
-                                                } placeholder: {
-                                                    ProgressView()
-                                                }
-                                                .frame(width: getRelativeWidth(30), height: getRelativeHeight(30))
-                                                .clipShape(Circle())
-                                                
-                                                Spacer()
-                                                
-                                                //Timings
-                                                VStack {
-                                                    Text("07:30")
-                                                    Text("PM")
-                                                }
-                                                .font(.subheadline)
-                                                
-                                                
-                                                Spacer()
-                                                
-                                                //Team 2 Image
-                                                AsyncImage(url: URL(string: "https://picsum.photos/id/12/600")) { image in
-                                                    image.resizable()
-                                                } placeholder: {
-                                                    ProgressView()
-                                                }
-                                                .frame(width: getRelativeWidth(30), height: getRelativeHeight(30))
-                                                .clipShape(Circle())
-                                                
-                                                Spacer()
-                                                
-                                                //Team 2
-                                                Text("Astralis")
-                                                    .font(.subheadline)
-                                                
-                                                Spacer()
-                                            }
-                                            .padding(.vertical, 5)
-                                        }
-                                    }
+                                if(self.isExpanded[i]) {
                                     
+                                    //Tournament Matches Info
+                                    VStack(){
+                                        //Loop Matches
+                                        ForEach(1..<3) { j in
+                                            NavigationLink(destination: MatchDetailView()) {
+                                                HStack {
+                                                    Spacer()
+                                                    
+                                                    //Team 1
+                                                    Text("Furia")
+                                                        .font(.subheadline)
+                                                    
+                                                    Spacer()
+                                                    
+                                                    //Team1 Image
+                                                    AsyncImage(url: URL(string: "https://picsum.photos/id/12/600")) { image in
+                                                        image.resizable()
+                                                    } placeholder: {
+                                                        ProgressView()
+                                                    }
+                                                    .frame(width: getRelativeWidth(30), height: getRelativeHeight(30))
+                                                    .clipShape(Circle())
+                                                    
+                                                    Spacer()
+                                                    
+                                                    //Timings
+                                                    VStack {
+                                                        Text("07:30")
+                                                        Text("PM")
+                                                    }
+                                                    .font(.subheadline)
+                                                    
+                                                    
+                                                    Spacer()
+                                                    
+                                                    //Team 2 Image
+                                                    AsyncImage(url: URL(string: "https://picsum.photos/id/12/600")) { image in
+                                                        image.resizable()
+                                                    } placeholder: {
+                                                        ProgressView()
+                                                    }
+                                                    .frame(width: getRelativeWidth(30), height: getRelativeHeight(30))
+                                                    .clipShape(Circle())
+                                                    
+                                                    Spacer()
+                                                    
+                                                    //Team 2
+                                                    Text("Astralis")
+                                                        .font(.subheadline)
+                                                    
+                                                    Spacer()
+                                                }
+                                                .padding(.vertical, 5)
+                                            }
+                                        }
+                                        
+                                    }
+                                    .padding(10)
+                                    .background(RoundedCorners(bottomLeft: 15, bottomRight: 15).fill(ColorContants.TournamentMatches))
                                 }
-                                .padding(10)
-                                .background(RoundedCorners(bottomLeft: 15, bottomRight: 15).fill(ColorContants.TournamentMatches))
                             }
                             .fontWeight(.semibold)
                             .padding(.vertical, 10)
@@ -202,7 +206,6 @@ struct MatchesView: View {
                     .foregroundColor(.white)
                     .padding(.horizontal, getRelativeWidth(10))
                 }
-                
             }
         }
     }
