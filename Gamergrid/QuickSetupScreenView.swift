@@ -12,7 +12,7 @@ struct QuickSetupScreenView: View {
     @StateObject var quickSetupScreenViewModel = QuickSetupScreenViewModel()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 Image("MainBackground")
                     .resizable()

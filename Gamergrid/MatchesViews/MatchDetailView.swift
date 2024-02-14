@@ -94,6 +94,9 @@ struct MatchDetailView: View {
                 }
                 .background(ColorContants.TopTitleBar)
                 
+                
+                MatchPreview()
+                
                 Spacer()
             }
             .foregroundColor(.white)
