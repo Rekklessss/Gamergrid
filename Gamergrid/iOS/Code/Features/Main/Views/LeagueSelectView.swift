@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import QGrid
 
 struct LeagueSelectView: View {
     let names = ["Holly", "Josh", "Rhonda", "Ted"]
@@ -56,6 +57,10 @@ struct LeagueSelectView: View {
                     
                     Spacer()
                     
+                    QGrid(Leagues, columns: 3) { GridCell(item: $0) }
+                    
+                    Spacer()
+                    
                     VStack{
                         HStack {
                             Text("Following")
@@ -92,6 +97,7 @@ struct LeagueSelectView: View {
                     .background(ColorContants.TopTitleBar)
                     .foregroundColor(.white)
                 }
+                .foregroundColor(.white)
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarLeading) {
                         Button(action: {
