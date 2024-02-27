@@ -14,6 +14,10 @@ struct FollowingItem: Codable, Identifiable {
     let selected: Bool
 }
 
+let CSGO = FollowingItem(id: 1, imgUrl: "CSGO", name: "Counter Strike", selected: false)
+
+let Games : [FollowingItem] = [CSGO]
+
 typealias FollowingItemsList = [FollowingItem]
 
 extension FollowingItemsList: RawRepresentable {

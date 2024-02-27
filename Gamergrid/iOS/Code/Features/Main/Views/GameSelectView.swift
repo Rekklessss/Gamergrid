@@ -6,6 +6,23 @@
 //
 
 import SwiftUI
+import QGrid
+
+struct GridCell: View {
+  var item: FollowingItem
+
+  var body: some View {
+    VStack() {
+        Image(item.imgUrl)
+        .resizable()
+        .scaledToFit()
+        .clipShape(Circle())
+        .shadow(color: .primary, radius: 5)
+        .padding([.horizontal, .top], 7)
+        Text(item.name).lineLimit(1)
+    }
+  }
+}
 
 struct GameSelectView: View {
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
@@ -45,6 +62,10 @@ struct GameSelectView: View {
                         .padding(.bottom)
                     }
                     .background(ColorContants.TopTitleBar)
+                    
+                    Spacer()
+                    
+                    QGrid(Games, columns: 3) { GridCell(item: $0) }
                     
                     Spacer()
                     
