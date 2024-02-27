@@ -41,9 +41,7 @@ struct MatchPreview: View {
                 VStack {
                     HStack {
                         Text("Discipline:")
-                        
                         Spacer()
-                        
                         Text("Game")
                     }
                     .padding(.vertical, getRelativeHeight(8))
@@ -51,9 +49,7 @@ struct MatchPreview: View {
                     
                     HStack {
                         Text("Date:")
-                        
                         Spacer()
-                        
                         Text("Game")
                     }
                     .padding(.vertical, getRelativeHeight(8))
@@ -61,9 +57,7 @@ struct MatchPreview: View {
                     
                     HStack {
                         Text("Prize Pool:")
-                        
                         Spacer()
-                        
                         Text("Game")
                     }
                     .padding(.vertical, getRelativeHeight(8))
@@ -71,9 +65,7 @@ struct MatchPreview: View {
                     
                     HStack {
                         Text("Series:")
-                        
                         Spacer()
-                        
                         Text("Game")
                     }
                     .padding(.vertical, getRelativeHeight(8))
@@ -81,9 +73,7 @@ struct MatchPreview: View {
                     
                     HStack {
                         Text("Type:")
-                        
                         Spacer()
-                        
                         Text("Game")
                     }
                     .padding(.vertical, getRelativeHeight(8))
@@ -91,9 +81,7 @@ struct MatchPreview: View {
                     
                     HStack {
                         Text("Organisers:")
-                        
                         Spacer()
-                        
                         Text("Game")
                     }
                     .padding(.vertical, getRelativeHeight(8))
@@ -101,9 +89,7 @@ struct MatchPreview: View {
                     
                     HStack {
                         Text("Sponsors")
-                        
                         Spacer()
-                        
                         Text("Game")
                     }
                     .padding(.vertical, getRelativeHeight(8))
@@ -116,6 +102,7 @@ struct MatchPreview: View {
                 
                 Spacer()
             }
+            .padding(.vertical)
         }
         .foregroundColor(.white)
     }

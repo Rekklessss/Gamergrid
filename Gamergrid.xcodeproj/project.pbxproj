@@ -31,6 +31,7 @@
 		0FA0DE392B7028EE00E345E3 /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE382B7028EE00E345E3 /* MatchDetailView.swift */; };
 		0FA0DE3B2B7035FE00E345E3 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE3A2B7035FE00E345E3 /* UINavigationControllerExtension.swift */; };
 		0FEA7F342B8DBCCA002AF2EE /* TournamentPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEA7F332B8DBCCA002AF2EE /* TournamentPreview.swift */; };
+		0FEA7F362B8DD072002AF2EE /* LineupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEA7F352B8DD072002AF2EE /* LineupsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		0FA0DE382B7028EE00E345E3 /* MatchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailView.swift; sourceTree = "<group>"; };
 		0FA0DE3A2B7035FE00E345E3 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 		0FEA7F332B8DBCCA002AF2EE /* TournamentPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentPreview.swift; sourceTree = "<group>"; };
+		0FEA7F352B8DD072002AF2EE /* LineupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				0FA0DE382B7028EE00E345E3 /* MatchDetailView.swift */,
 				0F2A3A452B7C7CCD0085340D /* MatchPreview.swift */,
 				0FEA7F332B8DBCCA002AF2EE /* TournamentPreview.swift */,
+				0FEA7F352B8DD072002AF2EE /* LineupsView.swift */,
 			);
 			path = MatchesViews;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				0FA0DE392B7028EE00E345E3 /* MatchDetailView.swift in Sources */,
 				0FA0DE352B6F9EAD00E345E3 /* FollowingItemModel.swift in Sources */,
 				0F2F53CF2B68D1D10093E0E7 /* ViewPortHelper.swift in Sources */,
+				0FEA7F362B8DD072002AF2EE /* LineupsView.swift in Sources */,
 				0F2A3A462B7C7CCD0085340D /* MatchPreview.swift in Sources */,
 				0FA0DE122B6C18CD00E345E3 /* RoundCorenersView.swift in Sources */,
 				0FA0DE202B6D050300E345E3 /* TeamSelectView.swift in Sources */,

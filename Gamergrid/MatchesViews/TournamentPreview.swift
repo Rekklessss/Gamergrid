@@ -57,9 +57,9 @@ struct TournamentPreview: View {
                             Spacer()
                             
                             HStack(spacing: 10) {
-                                Text("PL")
-                                Text("GD")
-                                Text("PTS")
+                                Text("19")
+                                Text("+23")
+                                Text("42x")
                             }
                         }
                         .foregroundColor(.white)
@@ -76,6 +76,7 @@ struct TournamentPreview: View {
                 
                 Spacer()
             }
+            .padding(.vertical)
         }
         .foregroundColor(.white)
     }
