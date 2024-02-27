@@ -12,6 +12,7 @@ struct MatchesView: View {
     @State public var isOngoing = false
     @State public var isSearching = false
     @State private var isExpanded: [Bool] = Array(repeating: true, count: 4)
+    @State private var tournamentsCount: Int = 3
 
     
     var body: some View {
@@ -103,7 +104,7 @@ struct MatchesView: View {
                             .padding(.vertical, getRelativeHeight(10))
                         }
                         
-                        ForEach(1..<4) { i in
+                        ForEach(1..<3) { i in
                             
                             VStack(spacing: 0) {
                                 //Tournament Title and info
@@ -201,6 +202,23 @@ struct MatchesView: View {
                             .fontWeight(.semibold)
                             .padding(.vertical, 10)
                         }
+                        
+                        Button(action: {}, label: {
+                            HStack {
+                                Text("Show All")
+                                
+                                Image(systemName: "chevron.down")
+                                    .resizable()
+                                    .frame(width: getRelativeWidth(15), height: getRelativeWidth(10))
+                            }
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .padding(.horizontal, 30)
+                            .padding(.vertical, 10)
+                            .background(RoundedCorners(topLeft: 15.0, topRight: 15.0,bottomLeft: 15, bottomRight:15).fill(ColorContants.TournamentTitle))
+                        })
+                        
+                        
                         
                         
                     }

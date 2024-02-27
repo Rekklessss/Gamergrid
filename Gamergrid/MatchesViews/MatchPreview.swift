@@ -32,11 +32,6 @@ struct MatchPreview: View {
                     
                     Spacer()
                     
-                    Button(action: {}, label: {
-                        Image(systemName: "chevron.up")
-                            .resizable()
-                            .frame(width: getRelativeWidth(15), height: getRelativeWidth(10))
-                    })
                 }
                 .padding(.vertical ,getRelativeHeight(10))
                 .padding(.horizontal, getRelativeWidth(20))
