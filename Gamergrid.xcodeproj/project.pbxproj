@@ -196,6 +196,8 @@
 			dependencies = (
 			);
 			name = Gamergrid;
+			packageProductDependencies = (
+			);
 			productName = Gamergrid;
 			productReference = 09BD01112B68CBB9000CE7C9 /* Gamergrid.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +226,8 @@
 				Base,
 			);
 			mainGroup = 09BD01082B68CBB9000CE7C9;
+			packageReferences = (
+			);
 			productRefGroup = 09BD01122B68CBB9000CE7C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

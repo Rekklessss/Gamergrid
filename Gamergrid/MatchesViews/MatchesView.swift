@@ -52,6 +52,7 @@ struct MatchesView: View {
                             })
                             .sheet(isPresented: $showCalendarSheet) {
                                 CalendarComponentView(showCalendarSheet: $showCalendarSheet)
+                                    .foregroundColor(.white)
                             }
                         }
                     }
@@ -132,7 +133,7 @@ struct MatchesView: View {
                                 }
                                 .padding(.vertical ,getRelativeHeight(10))
                                 .padding(.horizontal, getRelativeWidth(20))
-                                .background(RoundedCorners(topLeft: 15, topRight: 15).fill(ColorContants.TournamentTitle))
+                                .background(RoundedCorners(topLeft: 15, topRight: 15, bottomLeft: self.isExpanded[i] ? 0 : 15,bottomRight: self.isExpanded[i] ? 0 : 15).fill(ColorContants.TournamentTitle))
                                 
                                 if(self.isExpanded[i]) {
                                     
@@ -194,7 +195,7 @@ struct MatchesView: View {
                                         
                                     }
                                     .padding(10)
-                                    .background(RoundedCorners(bottomLeft: 15, bottomRight: 15).fill(ColorContants.TournamentMatches))
+                                    .background(RoundedCorners(bottomLeft: 15, bottomRight:15).fill(ColorContants.TournamentMatches))
                                 }
                             }
                             .fontWeight(.semibold)

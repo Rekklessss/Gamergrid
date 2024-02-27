@@ -117,8 +117,9 @@ struct MatchPreview: View {
                 .fontWeight(.semibold)
                 .padding()
                 .background(RoundedCorners(topLeft: 0,topRight: 0,bottomLeft: 15,bottomRight: 15).fill(ColorContants.TournamentMatches))
+                
+                Spacer()
             }
-            .padding(.vertical)
         }
         .foregroundColor(.white)
     }

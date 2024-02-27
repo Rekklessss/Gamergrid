@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CalendarComponentView: View {
-    
+    @State var selectedDate = Date()
     @Binding var showCalendarSheet: Bool
     
     var body: some View {
@@ -30,14 +30,20 @@ struct CalendarComponentView: View {
                 .padding(.horizontal)
                 .padding(.vertical,getRelativeHeight(20))
                 
-                Text("Calendar")
+                
+                DatePicker("Select Date",  selection: $selectedDate, displayedComponents: .date)
+                    .datePickerStyle(.graphical)
+                    .accentColor(.green)
+                    .foregroundColor(.green)
+                    .colorScheme(.dark)
+                    
                 
                 Spacer()
             }
             
         }
         .foregroundColor(ColorContants.GreenGradient1)
-        .presentationDetents([.height(getRelativeHeight(500)),.medium, .large])
+        .presentationDetents([.height(getRelativeHeight(500)),.large, .large])
         .ignoresSafeArea()
         .presentationDragIndicator(.hidden)
     }

@@ -14,7 +14,7 @@ struct MatchDetailView: View {
         ZStack {
             Color.black
                 .ignoresSafeArea()
-            VStack {
+            VStack(spacing: 0){
                 VStack {
                     HStack {
                         Spacer()
@@ -94,10 +94,10 @@ struct MatchDetailView: View {
                 }
                 .background(ColorContants.TopTitleBar)
                 
+                Spacer()
                 
                 MatchPreview()
                 
-                Spacer()
             }
             .foregroundColor(.white)
             .toolbar(content: {
