@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MatchDetailView: View {
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
-    
+    @State var currentTab : Int = 0
     var body: some View {
         ZStack {
             Color.black
@@ -67,6 +67,7 @@ struct MatchDetailView: View {
                         Spacer()
                     }
                     .padding(.vertical, getRelativeHeight(20))
+                    
                     
                     HStack(spacing: getRelativeWidth(20)){
                         Button(action: {}, label: {

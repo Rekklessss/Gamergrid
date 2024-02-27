@@ -29,6 +29,7 @@ struct MatchPreview: View {
                             .font(.subheadline)
                             .fontWeight(.bold)
                     }
+                    .padding(.vertical,5)
                     
                     Spacer()
                     

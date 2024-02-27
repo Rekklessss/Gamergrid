@@ -26,7 +26,7 @@ struct CalendarComponentView: View {
                     })
                 }
                 .fontWeight(.bold)
-                .font(.title2)
+                .font(.title3)
                 .padding(.horizontal)
                 .padding(.vertical,getRelativeHeight(20))
                 
