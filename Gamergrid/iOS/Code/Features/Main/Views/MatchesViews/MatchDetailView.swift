@@ -97,7 +97,7 @@ struct MatchDetailView: View {
                 
                 Spacer()
                 
-//                MatchPreview()
+                MatchPreview()
 //                TournamentPreview()
 //                LineupsView()
                 

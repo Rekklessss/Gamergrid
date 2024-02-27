@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09A25E822B8DE2D600ABE3F1 /* MatchesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A25E7F2B8DE2D600ABE3F1 /* MatchesListView.swift */; };
+		09A25E832B8DE2D600ABE3F1 /* LineupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A25E802B8DE2D600ABE3F1 /* LineupsView.swift */; };
+		09A25E842B8DE2D600ABE3F1 /* TournamentPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A25E812B8DE2D600ABE3F1 /* TournamentPreview.swift */; };
+		09B40B322B8DAFCA00D42636 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B40B312B8DAFCA00D42636 /* Colors.swift */; };
 		09BD01152B68CBB9000CE7C9 /* GamergridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD01142B68CBB9000CE7C9 /* GamergridApp.swift */; };
 		09BD01192B68CBBA000CE7C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BD01182B68CBBA000CE7C9 /* Assets.xcassets */; };
 		09BD011C2B68CBBA000CE7C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BD011B2B68CBBA000CE7C9 /* Preview Assets.xcassets */; };
@@ -30,11 +34,13 @@
 		0FA0DE352B6F9EAD00E345E3 /* FollowingItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE342B6F9EAD00E345E3 /* FollowingItemModel.swift */; };
 		0FA0DE392B7028EE00E345E3 /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE382B7028EE00E345E3 /* MatchDetailView.swift */; };
 		0FA0DE3B2B7035FE00E345E3 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DE3A2B7035FE00E345E3 /* UINavigationControllerExtension.swift */; };
-		0FEA7F342B8DBCCA002AF2EE /* TournamentPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEA7F332B8DBCCA002AF2EE /* TournamentPreview.swift */; };
-		0FEA7F362B8DD072002AF2EE /* LineupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEA7F352B8DD072002AF2EE /* LineupsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09A25E7F2B8DE2D600ABE3F1 /* MatchesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesListView.swift; sourceTree = "<group>"; };
+		09A25E802B8DE2D600ABE3F1 /* LineupsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineupsView.swift; sourceTree = "<group>"; };
+		09A25E812B8DE2D600ABE3F1 /* TournamentPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TournamentPreview.swift; sourceTree = "<group>"; };
+		09B40B312B8DAFCA00D42636 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		09BD01112B68CBB9000CE7C9 /* Gamergrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamergrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BD01142B68CBB9000CE7C9 /* GamergridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamergridApp.swift; sourceTree = "<group>"; };
 		09BD01182B68CBBA000CE7C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,8 +65,6 @@
 		0FA0DE342B6F9EAD00E345E3 /* FollowingItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingItemModel.swift; sourceTree = "<group>"; };
 		0FA0DE382B7028EE00E345E3 /* MatchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailView.swift; sourceTree = "<group>"; };
 		0FA0DE3A2B7035FE00E345E3 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
-		0FEA7F332B8DBCCA002AF2EE /* TournamentPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentPreview.swift; sourceTree = "<group>"; };
-		0FEA7F352B8DD072002AF2EE /* LineupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,137 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09B40B232B8D9E7A00D42636 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				09B40B242B8D9EBB00D42636 /* Code */,
+				09B40B252B8D9EC500D42636 /* Resources */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		09B40B242B8D9EBB00D42636 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				09B40B272B8D9F4000D42636 /* Common */,
+				09B40B282B8D9F4900D42636 /* Features */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		09B40B252B8D9EC500D42636 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09B40B262B8D9F2300D42636 /* Fonts */,
+				09BD01182B68CBBA000CE7C9 /* Assets.xcassets */,
+				09BD011A2B68CBBA000CE7C9 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		09B40B262B8D9F2300D42636 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		09B40B272B8D9F4000D42636 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				09B40B292B8D9F6100D42636 /* Controllers */,
+				09B40B2A2B8D9F7500D42636 /* Views */,
+				09B40B2B2B8D9F7D00D42636 /* Utils */,
+				0F2F53D02B68D3850093E0E7 /* Constants */,
+				0F2F53CC2B68D15E0093E0E7 /* Helpers */,
+				09B40B2C2B8D9F8500D42636 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		09B40B282B8D9F4900D42636 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				09B40B2D2B8D9FBE00D42636 /* Main */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		09B40B292B8D9F6100D42636 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09BD01142B68CBB9000CE7C9 /* GamergridApp.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		09B40B2A2B8D9F7500D42636 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		09B40B2B2B8D9F7D00D42636 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				09B40B312B8DAFCA00D42636 /* Colors.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		09B40B2C2B8D9F8500D42636 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0FA0DE112B6C18CD00E345E3 /* RoundCorenersView.swift */,
+				0FA0DE3A2B7035FE00E345E3 /* UINavigationControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		09B40B2D2B8D9FBE00D42636 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				09B40B302B8DA01100D42636 /* Views */,
+				09B40B2F2B8D9FFE00D42636 /* ViewModels */,
+				09B40B2E2B8D9FDD00D42636 /* Models */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		09B40B2E2B8D9FDD00D42636 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0FA0DE342B6F9EAD00E345E3 /* FollowingItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09B40B2F2B8D9FFE00D42636 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0FA0DE262B6D06E400E345E3 /* QuickSetupViewModal.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		09B40B302B8DA01100D42636 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0FA0DE302B6EFFEE00E345E3 /* MatchesViews */,
+				0FA0DE0C2B6B9AFA00E345E3 /* HomeScreenView.swift */,
+				0FA0DE172B6C2BFF00E345E3 /* LeaguesView.swift */,
+				0FA0DE1B2B6C338000E345E3 /* SettingsView.swift */,
+				0FA0DE192B6C334100E345E3 /* FollowingView.swift */,
+				0FA0DE152B6C2BCE00E345E3 /* NewsView.swift */,
+				0FA0DE282B6D08DA00E345E3 /* GameSelectView.swift */,
+				0FA0DE0E2B6C10FB00E345E3 /* QuickSetupScreenView.swift */,
+				0FA0DE1F2B6D050300E345E3 /* TeamSelectView.swift */,
+				0FA0DE212B6D051500E345E3 /* LeagueSelectView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		09BD01082B68CBB9000CE7C9 = {
 			isa = PBXGroup;
 			children = (
@@ -93,24 +228,7 @@
 		09BD01132B68CBB9000CE7C9 /* Gamergrid */ = {
 			isa = PBXGroup;
 			children = (
-				0FA0DE0C2B6B9AFA00E345E3 /* HomeScreenView.swift */,
-				0FA0DE302B6EFFEE00E345E3 /* MatchesViews */,
-				0FA0DE232B6D06A500E345E3 /* ViewModals */,
-				0FA0DE102B6C18B600E345E3 /* Eetensions */,
-				0F2F53D02B68D3850093E0E7 /* Constants */,
-				0F2F53CC2B68D15E0093E0E7 /* Helpers */,
-				09BD01142B68CBB9000CE7C9 /* GamergridApp.swift */,
-				0FA0DE172B6C2BFF00E345E3 /* LeaguesView.swift */,
-				0FA0DE1B2B6C338000E345E3 /* SettingsView.swift */,
-				0FA0DE192B6C334100E345E3 /* FollowingView.swift */,
-				0FA0DE152B6C2BCE00E345E3 /* NewsView.swift */,
-				0FA0DE282B6D08DA00E345E3 /* GameSelectView.swift */,
-				0FA0DE312B6F9AC500E345E3 /* models */,
-				0FA0DE0E2B6C10FB00E345E3 /* QuickSetupScreenView.swift */,
-				0FA0DE1F2B6D050300E345E3 /* TeamSelectView.swift */,
-				0FA0DE212B6D051500E345E3 /* LeagueSelectView.swift */,
-				09BD01182B68CBBA000CE7C9 /* Assets.xcassets */,
-				09BD011A2B68CBBA000CE7C9 /* Preview Content */,
+				09B40B232B8D9E7A00D42636 /* iOS */,
 			);
 			path = Gamergrid;
 			sourceTree = "<group>";
@@ -148,42 +266,18 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		0FA0DE102B6C18B600E345E3 /* Eetensions */ = {
-			isa = PBXGroup;
-			children = (
-				0FA0DE112B6C18CD00E345E3 /* RoundCorenersView.swift */,
-				0FA0DE3A2B7035FE00E345E3 /* UINavigationControllerExtension.swift */,
-			);
-			path = Eetensions;
-			sourceTree = "<group>";
-		};
-		0FA0DE232B6D06A500E345E3 /* ViewModals */ = {
-			isa = PBXGroup;
-			children = (
-				0FA0DE262B6D06E400E345E3 /* QuickSetupViewModal.swift */,
-			);
-			path = ViewModals;
-			sourceTree = "<group>";
-		};
 		0FA0DE302B6EFFEE00E345E3 /* MatchesViews */ = {
 			isa = PBXGroup;
 			children = (
+				09A25E802B8DE2D600ABE3F1 /* LineupsView.swift */,
+				09A25E7F2B8DE2D600ABE3F1 /* MatchesListView.swift */,
+				09A25E812B8DE2D600ABE3F1 /* TournamentPreview.swift */,
 				0FA0DE2D2B6EFF3300E345E3 /* CalendarComponentView.swift */,
 				0FA0DE132B6C2B8F00E345E3 /* MatchesView.swift */,
 				0FA0DE382B7028EE00E345E3 /* MatchDetailView.swift */,
 				0F2A3A452B7C7CCD0085340D /* MatchPreview.swift */,
-				0FEA7F332B8DBCCA002AF2EE /* TournamentPreview.swift */,
-				0FEA7F352B8DD072002AF2EE /* LineupsView.swift */,
 			);
 			path = MatchesViews;
-			sourceTree = "<group>";
-		};
-		0FA0DE312B6F9AC500E345E3 /* models */ = {
-			isa = PBXGroup;
-			children = (
-				0FA0DE342B6F9EAD00E345E3 /* FollowingItemModel.swift */,
-			);
-			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +296,6 @@
 			dependencies = (
 			);
 			name = Gamergrid;
-			packageProductDependencies = (
-			);
 			productName = Gamergrid;
 			productReference = 09BD01112B68CBB9000CE7C9 /* Gamergrid.app */;
 			productType = "com.apple.product-type.application";
@@ -232,8 +324,6 @@
 				Base,
 			);
 			mainGroup = 09BD01082B68CBB9000CE7C9;
-			packageReferences = (
-			);
 			productRefGroup = 09BD01122B68CBB9000CE7C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,20 +351,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FA0DE0F2B6C10FB00E345E3 /* QuickSetupScreenView.swift in Sources */,
+				09A25E822B8DE2D600ABE3F1 /* MatchesListView.swift in Sources */,
+				09B40B322B8DAFCA00D42636 /* Colors.swift in Sources */,
 				0FA0DE162B6C2BCE00E345E3 /* NewsView.swift in Sources */,
 				0FA0DE1A2B6C334100E345E3 /* FollowingView.swift in Sources */,
 				0FA0DE222B6D051500E345E3 /* LeagueSelectView.swift in Sources */,
 				0FA0DE292B6D08DA00E345E3 /* GameSelectView.swift in Sources */,
 				0FA0DE2E2B6EFF3300E345E3 /* CalendarComponentView.swift in Sources */,
 				0FA0DE142B6C2B8F00E345E3 /* MatchesView.swift in Sources */,
-				0FEA7F342B8DBCCA002AF2EE /* TournamentPreview.swift in Sources */,
 				0FA0DE392B7028EE00E345E3 /* MatchDetailView.swift in Sources */,
+				09A25E842B8DE2D600ABE3F1 /* TournamentPreview.swift in Sources */,
 				0FA0DE352B6F9EAD00E345E3 /* FollowingItemModel.swift in Sources */,
 				0F2F53CF2B68D1D10093E0E7 /* ViewPortHelper.swift in Sources */,
-				0FEA7F362B8DD072002AF2EE /* LineupsView.swift in Sources */,
 				0F2A3A462B7C7CCD0085340D /* MatchPreview.swift in Sources */,
 				0FA0DE122B6C18CD00E345E3 /* RoundCorenersView.swift in Sources */,
 				0FA0DE202B6D050300E345E3 /* TeamSelectView.swift in Sources */,
+				09A25E832B8DE2D600ABE3F1 /* LineupsView.swift in Sources */,
 				0FA0DE0D2B6B9AFA00E345E3 /* HomeScreenView.swift in Sources */,
 				09BD01152B68CBB9000CE7C9 /* GamergridApp.swift in Sources */,
 				0F2F53D22B68D39A0093E0E7 /* AppConstants.swift in Sources */,
@@ -416,7 +508,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Gamergrid/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = Gamergrid/iOS/Resources;
 				DEVELOPMENT_TEAM = HC7V52W2RB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -448,7 +540,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Gamergrid/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = Gamergrid/iOS/Resources;
 				DEVELOPMENT_TEAM = HC7V52W2RB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

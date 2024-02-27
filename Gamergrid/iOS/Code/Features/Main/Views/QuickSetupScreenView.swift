@@ -14,12 +14,9 @@ struct QuickSetupScreenView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Image("MainBackground")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .edgesIgnoringSafeArea(.all)
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .brightness(-0.4)
+                Color.background
+                    .ignoresSafeArea()
+                
                 VStack{
                     VStack {
                         Image("MainLogo")
