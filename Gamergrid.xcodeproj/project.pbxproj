@@ -101,25 +101,16 @@
 		09B40B252B8D9EC500D42636 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				09B40B262B8D9F2300D42636 /* Fonts */,
 				09BD01182B68CBBA000CE7C9 /* Assets.xcassets */,
 				09BD011A2B68CBBA000CE7C9 /* Preview Content */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		09B40B262B8D9F2300D42636 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		09B40B272B8D9F4000D42636 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				09B40B292B8D9F6100D42636 /* Controllers */,
-				09B40B2A2B8D9F7500D42636 /* Views */,
 				09B40B2B2B8D9F7D00D42636 /* Utils */,
 				0F2F53D02B68D3850093E0E7 /* Constants */,
 				0F2F53CC2B68D15E0093E0E7 /* Helpers */,
@@ -142,13 +133,6 @@
 				09BD01142B68CBB9000CE7C9 /* GamergridApp.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		09B40B2A2B8D9F7500D42636 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		09B40B2B2B8D9F7D00D42636 /* Utils */ = {
