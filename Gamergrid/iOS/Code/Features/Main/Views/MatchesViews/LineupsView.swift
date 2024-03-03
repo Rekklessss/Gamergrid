@@ -13,10 +13,12 @@ struct LineupsView: View {
             Color.black
                     .ignoresSafeArea()
             
+            
             VStack(spacing: 20) {
                 ForEach(1..<4) { i in
                     VStack(){
                         HStack(spacing: 20){
+                            
                             
                             AsyncImage(url: URL(string: "https://picsum.photos/id/12/600")) { image in
                                 image.resizable()

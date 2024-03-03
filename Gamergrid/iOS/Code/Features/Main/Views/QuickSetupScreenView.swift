@@ -5,6 +5,7 @@
 //  Created by user2 on 01/02/24.
 //
 
+
 import SwiftUI
 
 struct QuickSetupScreenView: View {
@@ -12,58 +13,54 @@ struct QuickSetupScreenView: View {
     @StateObject var quickSetupScreenViewModel = QuickSetupScreenViewModel()
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                Color.background
-                    .ignoresSafeArea()
-                
-                VStack{
-                    VStack {
+            NavigationStack {
+                ZStack {
+                    Color.background
+                        .ignoresSafeArea()
+
+                    VStack { 
+                        
                         Image("MainLogo")
                             .resizable()
-                            .frame(width: getRelativeWidth(300.0),
-                                   height: getRelativeHeight(70.0))
                             .scaledToFit()
-                            .clipped()
-                        
-                        Text("News  ·  Live Scores  ·  Stats")
+                            .frame(width: 300, height: 60) // Adjusted image size
+                         
+                        Text("News · Live Scores · Stats")
                             .fontWeight(.bold)
                             .foregroundColor(.white)
-                            .multilineTextAlignment(.leading)
-                            .frame(width: getRelativeWidth(268.0), height: getRelativeHeight(21.0),
-                                   alignment: .center)
-                            .padding(.top, getRelativeHeight(9.0))
-                            .padding(.horizontal, getRelativeWidth(29.0))
+                            .padding(.top, 10.0) // Fixed padding
+                    
+                        Spacer()
+
+                        NavigationLink(destination: GameSelectView()) {
+                            Text("Quick Setup")
+                                .font(.title2)
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .frame(width: 325, height: 72)
+                                .background(RoundedRectangle(cornerRadius: 16)
+                                            .fill(.green))
+                                .padding(.bottom)
+                            
+                        }
+
+                        Button("Already a user? Sign in") {
+                            
+                        }
+                        .font(.subheadline)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding(.bottom, 30)
                     }
-                    .padding(.top, getRelativeHeight(120))
+                    .padding(.vertical, 40)
                     
-                    Spacer()
-                    
-                    NavigationLink(destination: GameSelectView()){
-                        Text("Quick Setup")
-                            .font(.title2)
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
-                            .frame(width: getRelativeWidth(325.0),height: getRelativeHeight(72.0), alignment: .center)
-                            .background(RoundedCorners(topLeft: 16.0, topRight: 16.0,bottomLeft: 16.0, bottomRight: 16.0)
-                                .fill(.green))
-                    }
-                    
-                    Button(action: {}, label: {
-                        Text("Already a user? Sign in")
-                            .font(.subheadline)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            .foregroundColor(.white)
-                            .padding(.top)
-                            .padding(.bottom, getRelativeHeight(80))
-                    })
                 }
             }
+            
         }
     }
-}
 
 #Preview {
     QuickSetupScreenView()
 }
+

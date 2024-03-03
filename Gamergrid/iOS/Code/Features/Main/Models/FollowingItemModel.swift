@@ -11,25 +11,51 @@ import Foundation
 
 struct FollowingItem: Codable, Identifiable {
     let id: Int
+    let type: String
     let imgUrl: String
     let name: String
-    let selected: Bool
+    var selected: Bool
 }
 
-let CSGO = FollowingItem(id: 1, imgUrl: "CSGO", name: "Counter Strike", selected: false)
-let Valorant = FollowingItem(id: 2, imgUrl: "Valorant", name: "Valorant", selected: false)
 
-let Fnatic = FollowingItem(id: 1, imgUrl: "TeamFnatic", name: "Fnatic", selected: false)
-let Faze = FollowingItem(id: 2, imgUrl: "TeamFaze", name: "Faze", selected: false)
-let liquid = FollowingItem(id: 3, imgUrl: "TeamLiquid", name: "Team Liquid", selected: false)
+let Games: [FollowingItem] = [
+    FollowingItem(id: 1, type: "Game", imgUrl: "CSGO", name: "Counter Strike", selected: false),
+    FollowingItem(id: 2, type: "Game", imgUrl: "Valorant", name: "Valorant", selected: false),
+    FollowingItem(id: 3, type: "Game", imgUrl: "Dota2", name: "Dota 2", selected: false),
+    FollowingItem(id: 4, type: "Game", imgUrl: "ApexLegends", name: "Apex Legends", selected: false),
+    FollowingItem(id: 5, type: "Game", imgUrl: "Fortnite", name: "Fortnite", selected: false),
+    FollowingItem(id: 6, type: "Game", imgUrl: "LeagueOfLegends", name: "League of Legends", selected: false),
+    FollowingItem(id: 7, type: "Game", imgUrl: "PUBG", name: "PUBG", selected: false),
+    FollowingItem(id: 8, type: "Game", imgUrl: "RainbowSix", name: "Rainbow Six", selected: false),
+    FollowingItem(id: 9, type: "Game", imgUrl: "RocketLeague", name: "Rocket League", selected: false)
+]
 
-let RoobetCup = FollowingItem(id: 1, imgUrl: "RoobetCup", name: "Roobet Cup", selected: false)
-let ESLOne = FollowingItem(id: 2, imgUrl: "ESLOne", name: "ESL One", selected: false)
-let FlastPoint = FollowingItem(id: 3, imgUrl: "FlashPoint", name: "Flash Point", selected: false)
 
-let Games : [FollowingItem] = [CSGO,Valorant]
-let Teams : [FollowingItem] = [Fnatic, Faze, liquid,Fnatic, Faze, liquid,Fnatic, Faze, liquid,Fnatic, Faze, liquid]
-let Leagues : [FollowingItem] = [RoobetCup, ESLOne, FlastPoint]
+let Teams: [FollowingItem] = [
+    FollowingItem(id: 1, type: "Team", imgUrl: "TeamFnatic", name: "Fnatic", selected: false),
+    FollowingItem(id: 2, type: "Team", imgUrl: "TeamLiquid", name: "Liquid", selected: false),
+    FollowingItem(id: 3, type: "Team", imgUrl: "TeamFaze", name: "Faze", selected: false),
+    FollowingItem(id: 4, type: "Team", imgUrl: "TeamCloud9", name: "Cloud 9", selected: false),
+    FollowingItem(id: 5, type: "Team", imgUrl: "TeamG2", name: "G2", selected: false),
+    FollowingItem(id: 6, type: "Team", imgUrl: "TeamEvilGenius", name: "Evil Geniuses", selected: false),
+    FollowingItem(id: 7, type: "Team", imgUrl: "TeamNavi", name: "Natus Vincere", selected: false), // Abbreviated Navi
+    FollowingItem(id: 8, type: "Team", imgUrl: "TeamOpticGaming", name: "OpTic Gaming", selected: false),
+    FollowingItem(id: 9, type: "Team", imgUrl: "TeamTSM", name: "TSM", selected: false)
+]
+
+
+let Leagues: [FollowingItem] = [
+    FollowingItem(id: 1, type: "League", imgUrl: "RoobetCup", name: "Roobet Cup", selected: false),
+    FollowingItem(id: 2, type: "League", imgUrl: "FlashPoint", name: "Flash Point", selected: false), // Fixed duplicate ID
+    FollowingItem(id: 3, type: "League", imgUrl: "PremierCup", name: "Premier Cup", selected: false),
+    FollowingItem(id: 4, type: "League", imgUrl: "ESL", name: "ESL", selected: false),
+    FollowingItem(id: 5, type: "League", imgUrl: "ESLOne", name: "ESL One", selected: false),
+    FollowingItem(id: 6, type: "League", imgUrl: "AsiaCup", name: "Asia Cup", selected: false),
+    FollowingItem(id: 7, type: "League", imgUrl: "DreamhackCup", name: "Dreamhack Cup", selected: false),
+    FollowingItem(id: 8, type: "League", imgUrl: "StockholmCup", name: "Stockholm Cup", selected: false),
+    FollowingItem(id: 9, type: "League", imgUrl: "ThunderpickCup", name: "Thunderpick Cup", selected: false)
+]
+
 
 typealias FollowingItemsList = [FollowingItem]
 
@@ -52,3 +78,4 @@ extension FollowingItemsList: RawRepresentable {
         return result
     }
 }
+
